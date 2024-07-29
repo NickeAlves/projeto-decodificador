@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador</title>
+    <link rel="shortcut icon" type="imagex/png" href="./assets/icon-tab-web.ico">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__imagem" src="./assets/Vector.png" alt="imagem cabecalho">
+        <h1 class="cabecalho__titulo">Bem-vindo ao <strong class="cabecalho__titulo__grafado">decodificador</strong> de textos</h1>
+    </header>
+
+    <main class="corpo">
+        <section class="corpo__principal">
+            <form>
+                <textarea id="input-text" style="resize: none;" type="input" name="text" class="corpo__principal__textarea" rows="20" cols="500" placeholder="Digite a mensagem"></textarea>
+            </form>
+        </section>
+
+        <section class="corpo__secundario">
+            <div id="nada" class="corpo__secundario__nada">
+                <img class="corpo__secundario__imagem" src="./assets/boneco.png" alt="boneco alura">
+                <div class="corpo__secundario__nada__texto">
+                    <p></p>
+                    <h2>Nenhuma mensagem foi encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>    
+            </div>
+            <div id="resultado" class="corpo__secundario__resultado">
+                <span id="texto__resultado">Mostrar resultado</span>
+                <button id="botao__copiar" class="corpo__secundario__resultado__copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="rodape"> 
+        <div class="rodape__informativo"> 
+            <img src="./assets/icon-warning.png" alt="imagem alerta">
+            <p>Apenas letras minúsculas e sem acentos.</p>
+        </div>
+        <div class="rodape__botoes">
+            <button type="button" class="rodape__botoes__criptografia" onclick="mostrarResultado()">Criptografar</button>
+            <button type="button" class="rodape__botoes__descriptografia" onclick="mostrarDescriptografado()">Descriptografar</button>
+        </div>
+
+        <div id="nada__rodape" class="rodape__nada">
+            <h2>Nenhuma mensagem foi encontrada</h2>
+            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div>
+
+        <p class="rodape__desenvolvido">@Desenvolvido por Nicolas</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
