@@ -27,9 +27,9 @@ Requisitos:
   - O usuário deve inserir apenas letras minúsculas e sem acentos;
   - Não deve ser inserido caracteres especiais;
 
-Exemplos:
-  - Criptografia: projeto = proberjentertober;
-  - Descriptografia: proberjentertober = projeto
+Exemplos:  
+ - Criptografia: "projeto" = "proberjentertober";
+ - Descriptografia: "proberjentertober" = "projeto".
 
 
 A seguir, deixarei imagens mostrando toda as funcionalidades do site.
